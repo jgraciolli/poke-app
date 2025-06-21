@@ -1,16 +1,22 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { getAllPokemons, getPokemonByNameOrId } from './pokeService'
+import Pokemons from './pokemon/pokemons'
+
+const pokemons = await getAllPokemons()
+console.log(pokemons)
+
+const charizard = await getPokemonByNameOrId('charizard')
+console.log(charizard)
 
 function App() {
   return (
     <>
-      <header>
-        <h1>Welcome to the PokeApp!</h1>
-      </header>
-      <div>
-        <button>
-          <a href=''>Get started!</a>
-        </button>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Pokemons />} />                  
+        </Routes>        
+      </BrowserRouter>      
     </>
   )
 }

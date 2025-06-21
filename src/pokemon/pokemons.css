@@ -1,0 +1,4 @@
+.all-pokemons-container { 
+    background-color: aqua;
+    display: flex;
+}

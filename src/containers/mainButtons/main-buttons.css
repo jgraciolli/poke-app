@@ -1,0 +1,17 @@
+.buttons-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;     
+}
+
+.all-button {
+    background-color: rgb(182, 182, 214);
+}
+
+.favorite-button {
+    background-color: rgb(141, 75, 90);
+}
+
+p {
+    color: antiquewhite;
+}
