@@ -25,8 +25,8 @@ const PokemonDetails = () => {
                 title={<h1>Detalhes do {pokemon.name}</h1>}
             >
                 <h1>{pokemon.name}</h1> <br />
-                <h3>{pokemon.height}</h3> <br />
-                <h3>{pokemon.weight}</h3>
+                <h3>Altura: {pokemon.height / 10}m</h3> <br />
+                <h3>Peso: {pokemon.weight /10}kg</h3>
             </ContainerDesktop> 
         </>
     )
