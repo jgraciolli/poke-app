@@ -1,5 +1,7 @@
 .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: antiquewhite;
+    width: 30vw;
+    padding: 30;
+    border: solid;
+    margin: 1rem;
 }
