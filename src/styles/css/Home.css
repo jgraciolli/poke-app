@@ -1,0 +1,14 @@
+.home-header {
+    background-color: rgb(204, 76, 76);
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    background-color: antiquewhite;
+    margin-top: 2rem;
+    text-align: center;
+    
+}

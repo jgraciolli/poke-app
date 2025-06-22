@@ -1,14 +1,16 @@
-import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { getAllPokemons, getPokemonByNameOrId } from './pokeService'
-import Pokemons from './pokemon/pokemons'
+import Home from './components/Home'
+import Pokemons from './components/pokemon/Pokemons'
+import PokemonDetails from './components/pokemon/PokemonDetails'
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Pokemons />} />                  
+          <Route path='/' element={<Home />}/>
+          <Route path='/pokemons' element={<Pokemons />} />
+          <Route path='pokemons/:pokemonId' element={<PokemonDetails />}/>                  
         </Routes>        
       </BrowserRouter>      
     </>

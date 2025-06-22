@@ -1,7 +1,7 @@
-import './pokemons.css'
+import '../../styles/css/pokemon/pokemons.css'
 import ContainerDesktop from '../containers/desktop/ContainerDesktop'
-import PokemonCard from './card/PokemonCard'
-import { getAllPokemons } from '../pokeService'
+import PokemonCard from './PokemonCard'
+import { getAllPokemons } from '../../pokeService'
 import { useEffect, useState } from 'react'
 
 const Pokemons = () => {
