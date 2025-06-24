@@ -1,20 +1,18 @@
-import '../styles/css/home.css'
+import '../styles/css/home.css';
+import Logo from '../assets/logo.png'
 
 const Home = () => {
-    return(
+    return (
         <>
-            <header className="home-header">
-                <h1>Bem-vindo(a) ao Poké App!</h1>                
-            </header>
-            <main className="home-container">
-                <h2>Aqui você pode navegar e conhecer todos os pokémons!</h2>
-                <br />            
-                <button className="home-button">
-                    <a href="/pokemons">Começar</a>    
-                </button>            
-            </main>   
+            <main className='home-container'>
+                <img src={Logo} alt="PokéApp logo" className="logo" />              
+                <h1>Explore todos os Pokémon!</h1>
+                <button className="pokeball-button">
+                    <a href="/pokemons" className="pokeball-link"></a>
+                </button>
+            </main>            
         </>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
