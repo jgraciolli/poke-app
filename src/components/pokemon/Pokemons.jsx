@@ -1,5 +1,5 @@
 import '../../styles/css/pokemon/pokemons.css'
-import ContainerDesktop from '../containers/desktop/ContainerDesktop'
+import PageLayout from '../containers/desktop/PageLayout'
 import PokemonCard from './PokemonCard'
 import { getAllPokemons } from '../../pokeService'
 import { useEffect, useState } from 'react'
@@ -10,11 +10,13 @@ const Pokemons = () => {
     useEffect(() => {
         try {
             const getPokemons = async () => {
-                const data = await getAllPokemons()                     
+                const data = await getAllPokemons()
+                console.log(data)                     
                 setPokemons(data)
             }
 
-            getPokemons()       
+            getPokemons()
+            console.log(pokemons)       
         } catch (err) {
             console.log(err)
         }        
@@ -22,7 +24,7 @@ const Pokemons = () => {
 
     return(        
         <>
-            <ContainerDesktop 
+            <PageLayout 
                 title={ <h1>Todos os pokemons</h1> }
             >
                 <div className='all-pokemons-container'>
@@ -30,7 +32,7 @@ const Pokemons = () => {
                         <PokemonCard key={value.name} pokemon={value} />
                     ))}
                 </div>                                
-            </ContainerDesktop>           
+            </PageLayout>           
         </>        
     )
 }

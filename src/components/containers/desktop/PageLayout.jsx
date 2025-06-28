@@ -1,7 +1,7 @@
 import Header from "../../header/Header";
 import Buttons from "./buttons/Buttons";
 
-const ContainerDesktop = ({title, children}) => {
+const PageLayout = ({title, children}) => {
     return(
         <>
             <Header title={title}/>
@@ -13,4 +13,4 @@ const ContainerDesktop = ({title, children}) => {
     )
 }
 
-export default ContainerDesktop
+export default PageLayout
